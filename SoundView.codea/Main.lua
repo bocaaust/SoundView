@@ -6,7 +6,7 @@ function setup()
     screen = 0
     position = 0
     selector = 1
-    parameter.integer( "BackgroundImage", 1, 5, 1, redrawBG )
+    parameter.integer( "BackgroundImage", 1, 6, 1, redrawBG )
     sounds = {"Menu Select","violin1","violin2","violin3"}
     imges = {"spectrum","monalisa","trumptrain","test1","test2","sundayafternoon"}
     spriteMode(CORNER)
