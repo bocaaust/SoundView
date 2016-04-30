@@ -51,13 +51,13 @@ function draw()
                 --Check x boundaries on first button
                 if CurrentTouch.x >= ((WIDTH/4)-(WIDTH/2.5)) and CurrentTouch.x <= ((WIDTH/4)+(WIDTH/2.5)) then
                     --User is touching left button, so go to "Begin" screen
-                    screen == 1
+                    screen = 1
                 end
 
                 --Check x boundaries on second button
                 if CurrentTouch.x >= ((3*WIDTH/4)-(WIDTH/2.5)) and CurrentTouch.x <= ((3*WIDTH/4)+(WIDTH/2.5)) then
                     --User is touching right button, so go to "select image" screen
-                    screen == 1
+                    screen = 2
                 end
             end
         end
