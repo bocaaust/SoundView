@@ -22,6 +22,7 @@ function draw()
     if screen == 1 then
         sprite(img,0,0)
     elseif screen == 0 then
+        font("Futura-Medium")   --prettier font
         background(174, 174, 190, 255)
         textMode(CENTER)
         fill(0)
@@ -29,10 +30,14 @@ function draw()
         text("Synesthetics",WIDTH/2,HEIGHT/2)
         fontSize(45)
         --draw buttons
-        fill(30,30,30,160)
+        fill(30,30,30,160)  --dark gray buttons
         rectMode(CENTER)
-        rect(WIDTH/4, HEIGHT/3.5, WIDTH/3, HEIGHT/7)
-        rect(3*WIDTH/4, HEIGHT/3.5, WIDTH/3, HEIGHT/7)
+        rect(WIDTH/4, HEIGHT/3.5, WIDTH/2.5, HEIGHT/7)
+        rect(3*WIDTH/4, HEIGHT/3.5, WIDTH/2.5, HEIGHT/7)
+        fill(255,255,255,255)   --white text
+        text("Begin", WIDTH/4, HEIGHT/3.5)
+        text("Select Image", 3*WIDTH/4, HEIGHT/3.5)
+        rectMode(CORNER)    --reset rectMode
     end
     
 end
