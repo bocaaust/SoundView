@@ -31,8 +31,8 @@ function draw()
         --draw buttons
         fill(30,30,30,160)
         rectMode(CENTER)
-        rect(WIDTH/4, HEIGHT/3, WIDTH/3, HEIGHT/6)
-        rect(3*WIDTH/4, HEIGHT/3, WIDTH/3, HEIGHT/6)
+        rect(WIDTH/4, HEIGHT/3.5, WIDTH/3, HEIGHT/7)
+        rect(3*WIDTH/4, HEIGHT/3.5, WIDTH/3, HEIGHT/7)
     end
     
 end
