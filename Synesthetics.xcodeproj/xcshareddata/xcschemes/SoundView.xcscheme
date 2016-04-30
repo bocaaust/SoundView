@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DB8A004216F2DBDA005F87A6"
                BuildableName = "Synesthesia.app"
-               BlueprintName = "Synesthesia"
-               ReferencedContainer = "container:Synesthesia.xcodeproj">
+               BlueprintName = "Synesthetics"
+               ReferencedContainer = "container:Synesthetics.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DB8A004216F2DBDA005F87A6"
             BuildableName = "Synesthesia.app"
-            BlueprintName = "Synesthesia"
-            ReferencedContainer = "container:Synesthesia.xcodeproj">
+            BlueprintName = "Synesthetics"
+            ReferencedContainer = "container:Synesthetics.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -57,8 +57,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DB8A004216F2DBDA005F87A6"
             BuildableName = "Synesthesia.app"
-            BlueprintName = "Synesthesia"
-            ReferencedContainer = "container:Synesthesia.xcodeproj">
+            BlueprintName = "Synesthetics"
+            ReferencedContainer = "container:Synesthetics.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -76,8 +76,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DB8A004216F2DBDA005F87A6"
             BuildableName = "Synesthesia.app"
-            BlueprintName = "Synesthesia"
-            ReferencedContainer = "container:Synesthesia.xcodeproj">
+            BlueprintName = "Synesthetics"
+            ReferencedContainer = "container:Synesthetics.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
