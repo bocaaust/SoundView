@@ -27,9 +27,9 @@ function draw()
         background(174, 174, 190, 255)
         textMode(CENTER)
         fill(0)
-        fontSize(80)
+        fontSize(80*WIDTH/1024)
         text("Synesthetics",WIDTH/2,HEIGHT/2)
-        fontSize(45)
+        fontSize(45*WIDTH/1024)
         --draw buttons
         fill(30,30,30,160)  --dark gray buttons
         rectMode(CENTER)
