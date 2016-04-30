@@ -28,6 +28,26 @@ function playSound2()
     if position == nil then
         position = 1
     end
+    red = 0
+    green = 0
+    blue = 0
+    counter = 0
+    xpos = position
+    ypos = 1
+    repeat
+    counter = counter + 1
+    r,g,b = img:get(math.floor(xpos),math.floor(ypos))
+    red = red + r
+    green = green + g
+    blue = blue + b
+    xpos = xpos - 1
+    if ypos < HEIGHT-1 then
+        ypos = ypos + 1
+    end
+    until xpos <= 0
+    sound("Game Sounds One:"..sounds[2],.33*red/counter/255.,.20)
+    sound("Game Sounds One:"..sounds[3],.33*blue/counter/255.,.5)
+    sound("Game Sounds One:"..sounds[4],.23*green/counter/255.,.8)
     position = position + 1
 end
 
