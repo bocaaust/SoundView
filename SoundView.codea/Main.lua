@@ -15,17 +15,34 @@ function setup()
     sprite("Project:"..imges[1],0,0,WIDTH,HEIGHT)
     setContext()
     touching=true
+parameter.action("Play",playSound)
+    playing = false
+end
+
+function playSound()
+    position = 1
+    playing = true
+end
+
+function playSound2()
+    if position == nil then
+        position = 1
+    end
+    position = position + 1
 end
 
 -- This function gets called once every frame
 function draw()
     if screen == 1 then
-        if touching == false then
-            touching = true
-            selector = BackgroundImage
-            redrawBG()
-        end
         sprite(img,0,0)
+        if playing then
+            position = playSound2()
+            if position ~= nil then
+            if position >= WIDTH then
+                playing = false
+            end
+                end
+        end
     elseif screen == 0 then
         font("Futura-Medium")   --prettier font
         background(174, 174, 190, 255)
