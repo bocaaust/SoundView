@@ -1,6 +1,6 @@
 -- SoundView
-displayMode(FULLSCREEN_NO_BUTTONS)
-supportedOrientations(LANDSCAPE_LEFT)
+displayMode(FULLSCREEN)
+
 -- Use this function to perform your initial setup
 function setup()
     position = 0
@@ -17,6 +17,16 @@ end
 function draw()
   sprite(img,0,0)
     
+end
+
+function orientationChanged(newOrientation)
+    spriteMode(CORNER)
+    img = image(WIDTH,HEIGHT)
+    setContext(img)
+
+    sprite("Project:spectrum",0,0,WIDTH,HEIGHT)
+    setContext()
+
 end
 
 function touched(touch)
