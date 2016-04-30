@@ -30,46 +30,20 @@ function draw()
         fontSize(80*WIDTH/1024)
         text("Synesthetics",WIDTH/2,HEIGHT/2)
         fontSize(45*WIDTH/1024)
-        --draw buttons
-        fill(30,30,30,160)  --dark gray buttons
-        rectMode(CENTER)
-        rect(WIDTH/4, HEIGHT/3.5, WIDTH/2.5, HEIGHT/7)
-        rect(3*WIDTH/4, HEIGHT/3.5, WIDTH/2.5, HEIGHT/7)
-        fill(255,255,255,255)   --white text
-        text("Begin", WIDTH/4, HEIGHT/3.5)
-        text("Select Image", 3*WIDTH/4, HEIGHT/3.5)
+        text("tap to begin",WIDTH/2,HEIGHT/2.4)
+
         rectMode(CORNER)    --reset rectMode
 
         --check touch
         if CurrentTouch.state == BEGAN and touching then
             touching=false
-
-            --Check if user touched within the bounds of the buttons
-
-            --First check y boundaries
-            if CurrentTouch.y >= ((HEIGHT/3.5)-(HEIGHT/7)) and CurrentTouch.y <= ((HEIGHT/3.5)+(HEIGHT/7)) then
-                --Check x boundaries on first button
-                if CurrentTouch.x >= ((WIDTH/4)-(WIDTH/2.5)) and CurrentTouch.x <= ((WIDTH/4)+(WIDTH/2.5)) then
-                    --User is touching left button, so go to "Begin" screen
-                    screen = 1
-                end
-
-                --Check x boundaries on second button
-                if CurrentTouch.x >= ((3*WIDTH/4)-(WIDTH/2.5)) and CurrentTouch.x <= ((3*WIDTH/4)+(WIDTH/2.5)) then
-                    --User is touching right button, so go to "select image" screen
-                    screen = 2
-                end
-            end
+            screen = 1
         end
 
         --Make sure user only taps once
         if CurrentTouch.state == ENDED then
             touching = true
         end
-
-    elseif screen==2 then
-        font("Futura-Medium")   --prettier font
-        background(174, 174, 190, 255)
     end
     
 end
