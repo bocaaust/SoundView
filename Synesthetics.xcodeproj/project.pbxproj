@@ -46,15 +46,12 @@
 		DB8A00A716F2E859005F87A6 /* SourceSansPro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB8A00A316F2E859005F87A6 /* SourceSansPro-Semibold.otf */; };
 		DB8A015C16F73DFF005F87A6 /* SoundView.codea in Resources */ = {isa = PBXBuildFile; fileRef = DB8A015B16F73DFF005F87A6 /* SoundView.codea */; };
 		DBC21B9719EBF2B000CD519E /* CodeaAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC21B9619EBF2B000CD519E /* CodeaAddon.m */; };
-		DBC21B9C19ED75A000CD519E /* GameCenterAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCE375F19E9F77800E382EC /* GameCenterAddon.m */; };
-		DBCE376219E9F82D00E382EC /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCE376119E9F82D00E382EC /* GameKit.framework */; };
 		DBE0BEA31A8B693D0010DC06 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE0BEA21A8B693D0010DC06 /* iAd.framework */; };
 		DBEA4FC31BC23A0200000A55 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC21BC23A0200000A55 /* Launch Screen.storyboard */; };
 		DBEA4FC81BC243D800000A55 /* LaunchBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC41BC243D800000A55 /* LaunchBackground.png */; };
 		DBEA4FC91BC243D800000A55 /* LaunchLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC51BC243D800000A55 /* LaunchLogo.png */; };
 		DBEA4FCA1BC243D800000A55 /* LaunchLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC61BC243D800000A55 /* LaunchLogo@2x.png */; };
 		DBEA4FCB1BC243D800000A55 /* LaunchLogo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC71BC243D800000A55 /* LaunchLogo@3x.png */; };
-		DBF0F5A91A3D0B78007693C1 /* iAdsAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF0F5A71A3D0B78007693C1 /* iAdsAddon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,17 +99,12 @@
 		DB8A00A316F2E859005F87A6 /* SourceSansPro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Semibold.otf"; sourceTree = "<group>"; };
 		DB8A015B16F73DFF005F87A6 /* SoundView.codea */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SoundView.codea; sourceTree = "<group>"; };
 		DBC21B9619EBF2B000CD519E /* CodeaAddon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeaAddon.m; sourceTree = "<group>"; };
-		DBCE375E19E9F77800E382EC /* GameCenterAddon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterAddon.h; sourceTree = "<group>"; };
-		DBCE375F19E9F77800E382EC /* GameCenterAddon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterAddon.m; sourceTree = "<group>"; };
-		DBCE376119E9F82D00E382EC /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		DBE0BEA21A8B693D0010DC06 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		DBEA4FC21BC23A0200000A55 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		DBEA4FC41BC243D800000A55 /* LaunchBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchBackground.png; sourceTree = "<group>"; };
 		DBEA4FC51BC243D800000A55 /* LaunchLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchLogo.png; sourceTree = "<group>"; };
 		DBEA4FC61BC243D800000A55 /* LaunchLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchLogo@2x.png"; sourceTree = "<group>"; };
 		DBEA4FC71BC243D800000A55 /* LaunchLogo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchLogo@3x.png"; sourceTree = "<group>"; };
-		DBF0F5A71A3D0B78007693C1 /* iAdsAddon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iAdsAddon.m; sourceTree = "<group>"; };
-		DBF0F5A81A3D0B78007693C1 /* iAdsAddon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAdsAddon.h; sourceTree = "<group>"; };
 		DBF44365170F00F20026A109 /* CodeaAddon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeaAddon.h; sourceTree = "<group>"; };
 		DBF44367170F02580026A109 /* lapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lapi.h; sourceTree = "<group>"; };
 		DBF44368170F02580026A109 /* lauxlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lauxlib.h; sourceTree = "<group>"; };
@@ -128,7 +120,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBE0BEA31A8B693D0010DC06 /* iAd.framework in Frameworks */,
-				DBCE376219E9F82D00E382EC /* GameKit.framework in Frameworks */,
 				DB5E404418CD80570001CC1F /* Social.framework in Frameworks */,
 				DB0DC0BA18C4608E005F4723 /* Accelerate.framework in Frameworks */,
 				DB0DC0B818C4608A005F4723 /* CoreLocation.framework in Frameworks */,
@@ -183,7 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				DBE0BEA21A8B693D0010DC06 /* iAd.framework */,
-				DBCE376119E9F82D00E382EC /* GameKit.framework */,
 				DB5E404318CD80570001CC1F /* Social.framework */,
 				DB0DC0B918C4608E005F4723 /* Accelerate.framework */,
 				DB0DC0B718C4608A005F4723 /* CoreLocation.framework */,
@@ -259,21 +249,9 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		DBCE375D19E9F74E00E382EC /* Extra */ = {
-			isa = PBXGroup;
-			children = (
-				DBF0F5A71A3D0B78007693C1 /* iAdsAddon.m */,
-				DBF0F5A81A3D0B78007693C1 /* iAdsAddon.h */,
-				DBCE375E19E9F77800E382EC /* GameCenterAddon.h */,
-				DBCE375F19E9F77800E382EC /* GameCenterAddon.m */,
-			);
-			path = Extra;
-			sourceTree = "<group>";
-		};
 		DBF44364170F00F20026A109 /* Addons */ = {
 			isa = PBXGroup;
 			children = (
-				DBCE375D19E9F74E00E382EC /* Extra */,
 				DBF44365170F00F20026A109 /* CodeaAddon.h */,
 				DBC21B9619EBF2B000CD519E /* CodeaAddon.m */,
 			);
@@ -387,8 +365,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBC21B9719EBF2B000CD519E /* CodeaAddon.m in Sources */,
-				DBC21B9C19ED75A000CD519E /* GameCenterAddon.m in Sources */,
-				DBF0F5A91A3D0B78007693C1 /* iAdsAddon.m in Sources */,
 				DB8A005316F2DBDA005F87A6 /* main.m in Sources */,
 				DB8A005716F2DBDA005F87A6 /* AppDelegate.mm in Sources */,
 			);
