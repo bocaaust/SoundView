@@ -5,11 +5,12 @@ displayMode(FULLSCREEN)
 function setup()
     position = 0
     sounds = {"Menu Select","violin1","violin2","violin3"}
+    images = {"spectrum","monalisa","trumptrain"}
     spriteMode(CORNER)
     img = image(WIDTH,HEIGHT)
     setContext(img)
     
-    sprite("Project:spectrum",0,0,WIDTH,HEIGHT)
+    sprite("Project:"..images[1],0,0,WIDTH,HEIGHT)
     setContext()
 end
 
