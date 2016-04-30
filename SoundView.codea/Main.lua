@@ -12,15 +12,19 @@ function setup()
     spriteMode(CORNER)
     img = image(WIDTH,HEIGHT)
     setContext(img)
-    
     sprite("Project:"..imges[1],0,0,WIDTH,HEIGHT)
     setContext()
-    touching=false
+    touching=true
 end
 
 -- This function gets called once every frame
 function draw()
     if screen == 1 then
+        if touching == false then
+            touching = true
+            selector = BackgroundImage
+            redrawBG()
+        end
         sprite(img,0,0)
     elseif screen == 0 then
         font("Futura-Medium")   --prettier font
@@ -32,23 +36,21 @@ function draw()
         fontSize(45*WIDTH/1024)
         text("tap to begin",WIDTH/2,HEIGHT/2.4)
 
-        rectMode(CORNER)    --reset rectMode
 
         --check touch
         if CurrentTouch.state == BEGAN and touching then
             touching=false
             screen = 1
         end
-
-        --Make sure user only taps once
-        if CurrentTouch.state == ENDED then
-            touching = true
-        end
     end
     
 end
 
 function redrawBG()
+    --if BackgroundImage ~= nil then
+   --     selector = BackgroundImage
+   -- end
+    spriteMode(CORNER)
     img = image(WIDTH,HEIGHT)
     setContext(img)
 
@@ -61,6 +63,7 @@ function redrawBG()
 end
 
 function redrawBG(input)
+    spriteMode(CORNER)
     selector = input
     img = image(WIDTH,HEIGHT)
     setContext(img)
