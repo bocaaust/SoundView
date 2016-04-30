@@ -15,6 +15,7 @@ function setup()
     
     sprite("Project:"..imges[1],0,0,WIDTH,HEIGHT)
     setContext()
+    touching=false
 end
 
 -- This function gets called once every frame
@@ -38,6 +39,37 @@ function draw()
         text("Begin", WIDTH/4, HEIGHT/3.5)
         text("Select Image", 3*WIDTH/4, HEIGHT/3.5)
         rectMode(CORNER)    --reset rectMode
+
+        --check touch
+        if CurrentTouch.state == BEGAN and touching then
+            touching=false
+
+            --Check if user touched within the bounds of the buttons
+
+            --First check y boundaries
+            if CurrentTouch.y >= ((HEIGHT/3.5)-(HEIGHT/7)) and CurrentTouch.y <= ((HEIGHT/3.5)+(HEIGHT/7)) then
+                --Check x boundaries on first button
+                if CurrentTouch.x >= ((WIDTH/4)-(WIDTH/2.5)) and CurrentTouch.x <= ((WIDTH/4)+(WIDTH/2.5)) then
+                    --User is touching left button, so go to "Begin" screen
+                    screen == 1
+                end
+
+                --Check x boundaries on second button
+                if CurrentTouch.x >= ((3*WIDTH/4)-(WIDTH/2.5)) and CurrentTouch.x <= ((3*WIDTH/4)+(WIDTH/2.5)) then
+                    --User is touching right button, so go to "select image" screen
+                    screen == 1
+                end
+            end
+        end
+
+        --Make sure user only taps once
+        if CurrentTouch.state == ENDED then
+            touching = true
+        end
+
+    elseif screen==2 then
+        font("Futura-Medium")   --prettier font
+        background(174, 174, 190, 255)
     end
     
 end
