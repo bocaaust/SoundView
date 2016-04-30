@@ -10,7 +10,6 @@
 
 #import "StandaloneCodeaViewController.h"
 
-#import "GameCenterAddon.h"
 
 @implementation AppDelegate
 

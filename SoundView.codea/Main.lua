@@ -5,12 +5,12 @@ displayMode(FULLSCREEN)
 function setup()
     position = 0
     sounds = {"Menu Select","violin1","violin2","violin3"}
-    images = {"spectrum","monalisa","trumptrain"}
+    imges = {"spectrum","monalisa","trumptrain","AustinArt1","AustinArt2","AustinArt3","AustinArt4"}
     spriteMode(CORNER)
     img = image(WIDTH,HEIGHT)
     setContext(img)
     
-    sprite("Project:"..images[1],0,0,WIDTH,HEIGHT)
+    sprite("Project:"..imges[1],0,0,WIDTH,HEIGHT)
     setContext()
 end
 
@@ -21,13 +21,15 @@ function draw()
 end
 
 function orientationChanged(newOrientation)
-    spriteMode(CORNER)
     img = image(WIDTH,HEIGHT)
     setContext(img)
-
+  
+    if imges ~= nil then
+    sprite("Project:"..imges[1],0,0,WIDTH,HEIGHT)
+    else
     sprite("Project:spectrum",0,0,WIDTH,HEIGHT)
+    end
     setContext()
-
 end
 
 function touched(touch)
